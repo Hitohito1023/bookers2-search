@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :books
   root 'homes#top'
   get 'home/about' => 'homes#about', as: 'about'
+  post 'search' => 'search#search'
 end
